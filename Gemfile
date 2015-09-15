@@ -2,6 +2,9 @@
 # Wednesday, 9 September, 2015
 source "https://rubygems.org"
 
+# Ruby version
+ruby ‘2.2.2’
+
 # Camping is my microframework of choice
 gem 'camping'
 
