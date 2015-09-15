@@ -50,6 +50,11 @@ module Ullmannite::Views
           'name' => 'generator',
           'content' => 'Coda 2, Camping (Ruby microframework), GitHub, MacBook Pro 15" (Late 2013), Ubuntu 15.04 Vivid Vervet.'
         )
+        # Links
+        tag!(:link,
+          'rel' => 'stylesheet',
+          'href' => 'Assets/Stylesheets/Main.css'
+        )
       end
       body do
         @sites.map do |site|
@@ -60,7 +65,7 @@ module Ullmannite::Views
             h6 do
               site.name[/\([0-9A-Za-z *]*\)/] # Text within and including the parentheses
             end # h6
-            img :src => "Thumbnails/#{site.image}", :alt => site.image
+            img :src => "Assets/Thumbnails/#{site.image}", :alt => site.image
           end # div.site
         end
       end
