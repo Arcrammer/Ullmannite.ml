@@ -3,9 +3,60 @@
     Tuesday, 15 September, 2015
     Alexander Rhett Crammer  */
 
+/* Master Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}img{width:100%}
+
 /* Structure */
 body {
   background-color: #fefefe;
   font-family: "Helvetica Neue";
   font-weight: 200;
+}
+
+.container {
+  background-color: orange;
+  margin: 2.5% 10%;
+  width: 80%;
+}
+
+/* Sites */
+.site {
+  background-color: magenta;
+  float: left;
+  height: 335px;
+  margin: 1.5%;
+  width: 30.33333333%;
+}
+
+.site h4 {
+  letter-spacing: 1.15px;
+}
+
+.site h6 {
+  font-size: 0.8em;
+  font-weight: 400;
+  letter-spacing: 0.85px;
+  text-transform: uppercase;
+}
+
+.site h4, .site h6 {
+  padding: 2.5%;
+  text-align: center;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Freight";
+  src: url('ufonts.com_freight-sans-light-opentype-webfont.eot');
+  src: url('ufonts.com_freight-sans-light-opentype-webfont.eot?#iefix') format('embedded-opentype'),
+   url('ufonts.com_freight-sans-light-opentype-webfont.woff2') format('woff2'),
+   url('ufonts.com_freight-sans-light-opentype-webfont.woff') format('woff'),
+   url('ufonts.com_freight-sans-light-opentype-webfont.ttf') format('truetype'),
+   url('ufonts.com_freight-sans-light-opentype-webfont.svg#freightregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
