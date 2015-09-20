@@ -3,7 +3,7 @@
 source "https://rubygems.org"
 
 # Ruby version
-ruby ‘2.2.2’
+ruby '2.2.2'
 
 # Camping is my microframework of choice
 gem 'camping'
