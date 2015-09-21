@@ -19,17 +19,27 @@ body {
 
 .container {
   background-color: orange;
-  margin: 2.5% 10%;
-  width: 80%;
+  margin: 2.5% 5%;
+  width: 90%;
+}
+
+/* Header */
+h1 {
+  font-size: 4.5em;
+  font-weight: 100;
+  letter-spacing: 2.5px;
+  margin: 3.5% 0;
+  text-align: center;
+  text-transform: lowercase;
 }
 
 /* Sites */
 .site {
-  background-color: magenta;
+  border: 1px solid gray;
   float: left;
-  height: 335px;
-  margin: 1.5%;
-  width: 30.33333333%;
+  height: 375px;
+  margin: 2.5768201627%;
+  width: 27.973547395%;
 }
 
 .site h4 {
@@ -48,15 +58,22 @@ body {
   text-align: center;
 }
 
+.brief {
+  font-size: 0.85em;
+  letter-spacing: 1px;
+  line-height: 135%;
+  margin: 3.5% 5%;
+  text-align: center;
+}
+
 /* Fonts */
 @font-face {
   font-family: "Freight";
-  src: url('ufonts.com_freight-sans-light-opentype-webfont.eot');
-  src: url('ufonts.com_freight-sans-light-opentype-webfont.eot?#iefix') format('embedded-opentype'),
-   url('ufonts.com_freight-sans-light-opentype-webfont.woff2') format('woff2'),
-   url('ufonts.com_freight-sans-light-opentype-webfont.woff') format('woff'),
-   url('ufonts.com_freight-sans-light-opentype-webfont.ttf') format('truetype'),
-   url('ufonts.com_freight-sans-light-opentype-webfont.svg#freightregular') format('svg');
+  src: url('../Fonts/FreightSans-Light.eot');
+  src: url('../FontsFreightSans-Light.woff2') format('woff2'),
+   url('../FontsFreightSans-Light.woff') format('woff'),
+   url('../FontsFreightSans-Light.ttf') format('truetype'),
+   url('../FontsFreightSans-Light.svg#freightregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }

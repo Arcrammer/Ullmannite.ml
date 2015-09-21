@@ -57,20 +57,22 @@ module Ullmannite::Views
         )
       end
       body do
+        h1 'Alexander Rhett Crammer'
         div.container do
           @sites.map do |site|
             div.site do
               h4 do
-                site.name[/^[0-9A-Za-z *]*\(/].to_s[0..-2] # Text before the first parenthesis (excluding the extra space and parenthesis)
+                site.name[/^[0-9A-Za-z- *]*\(/].to_s[0..-2] # Text before the first parenthesis (excluding the extra space and parenthesis)
               end # h4
               h6 do
-                site.name[/\([0-9A-Za-z *]*\)/] # Text within and including the parentheses
+                site.name[/\([0-9A-Za-z- *]*\)/] # Text within and including the parentheses
               end # h6
               img :src => "Assets/Thumbnails/#{site.image}", :alt => site.image
+              p.brief site.brief
             end # div.site
           end
-        end
-      end
-    end
-  end
+        end # div.container
+      end # body
+    end # html
+  end # welcome
 end
