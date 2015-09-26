@@ -3,6 +3,8 @@
 # Created Wednesday, 9 September, 2015
 # Alexander Rhett Crammer
 #
+require 'camping'
+
 Camping.goes :Ullmannite
 
 # Models
@@ -76,3 +78,5 @@ module Ullmannite::Views
     end # html
   end # welcome
 end
+
+run Rack::Adapter::Camping.new(Ullmannite)
