@@ -36,10 +36,11 @@ h1 {
 /* Sites */
 .site {
   border: 1px solid gray;
+  box-sizing: border-box;
   float: left;
   height: 375px;
-  margin: 2.5768201627%;
-  width: 27.973547395%;
+  margin: 2.7126912719%;
+  width: 27.690935488%;
 }
 
 .site h4 {
