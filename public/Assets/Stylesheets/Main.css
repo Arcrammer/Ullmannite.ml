@@ -88,6 +88,16 @@ h1 {
   text-align: center;
 }
 
+/* Footer */
+footer {
+  clear: both;
+  margin-top: 5%;
+  text-align: center;
+}
+footer img {
+  width: 150px !important;
+}
+
 /* Fonts */
 @font-face {
   font-family: "Freight";

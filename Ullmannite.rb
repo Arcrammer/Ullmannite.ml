@@ -76,6 +76,9 @@ module Ullmannite::Views
             end
           end
         end # div.container
+        footer do
+          img :src => 'Assets/Images/Logo.png', :alt => 'Logo.png'
+        end
       end # body
     end # html
   end # welcome
