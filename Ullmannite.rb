@@ -18,7 +18,7 @@ end
 module Ullmannite::Controllers
   class Index < R '/'
     def get
-      @sites = Models::Site.all
+      @sites = Models::Site.all.reverse
       render :welcome
     end
   end
@@ -63,14 +63,16 @@ module Ullmannite::Views
         div.container do
           @sites.map do |site|
             div.site do
-              h4 do
-                site.name[/^[0-9A-Za-z- *]*\(/].to_s[0..-2] # Text before the first parenthesis (excluding the extra space and parenthesis)
-              end # h4
-              h6 do
-                site.name[/\([0-9A-Za-z- *]*\)/] # Text within and including the parentheses
-              end # h6
-              img :src => "Assets/Thumbnails/#{site.image}", :alt => site.image
-              p.brief site.brief
+              a :href => site.link do
+                h4 do
+                  site.name[/^[0-9A-Za-z- *]*\(/].to_s[0..-2] # Text before the first parenthesis (excluding the extra space and parenthesis)
+                end # h4
+                h6 do
+                  site.name[/\([0-9A-Za-z- *]*\)/] # Text within and including the parentheses
+                end # h6
+                img :src => "Assets/Thumbnails/#{site.image}", :alt => site.image
+                p.brief site.brief
+              end # a
             end # div.site
           end
         end # div.container
