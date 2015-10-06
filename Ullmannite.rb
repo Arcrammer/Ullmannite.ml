@@ -72,8 +72,6 @@ module Ullmannite::Views
                 end # h6
                 img :src => "Assets/Thumbnails/#{site.image}", :alt => site.image
                 p.brief site.brief
-              end # div.site
-            end
               end # a
             end # div.site
           end
