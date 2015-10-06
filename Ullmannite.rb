@@ -72,13 +72,10 @@ module Ullmannite::Views
                 end # h6
                 img :src => "Assets/Thumbnails/#{site.image}", :alt => site.image
                 p.brief site.brief
-<<<<<<< HEAD
               end # div.site
             end
-=======
               end # a
             end # div.site
->>>>>>> origin/master
           end
         end # div.container
         footer do
@@ -88,5 +85,3 @@ module Ullmannite::Views
     end # html
   end # welcome
 end
-
-run Rack::Adapter::Camping.new(Ullmannite)
